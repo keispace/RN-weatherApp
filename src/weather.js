@@ -7,50 +7,50 @@ import PropTypes from 'prop-types';
 const weatherCases = {
     Rain: {
         colors:['#00C6FB', '#005BEA'],
-        title:'Raining like a MF',
-        subTitle:'For more info look outside',
+        title:'비가 내린다고 한다',
+        subTitle:'자세한 정보는 그냥 밖을 보자',
         icon:'weather-rainy',
     },
     Clear: {
         colors:['#FEF253', '#FF7300'],
-        title:'Sunny as Fuck',
-        subTitle:'Go get your ass burnt',
+        title:'맑음',
+        subTitle:'눈아파',
         icon:'weather-sunny',
     },
     Thunderstorm: {
         colors:['#00ECBC', '#007ADF'],
-        title:'Thunderstorm in the house!',
-        subTitle:'Actually outside of the house',
+        title:'폭풍우',
+        subTitle:'시공의 폭풍 하쉴?',
         icon:'weather-lightning-rainy',
     },
     Clouds: {
         colors:['#D7D2CC', '#304352'],
-        title:'Clouds',
-        subTitle:'I know, fucking boring',
+        title:'흐림',
+        subTitle:'날씨는 흐림 내 기분은 구림',
         icon:'weather-cloudy',
     },
     Snow: {
         colors:['#7DE2FC', '#B9B6E5'],
-        title:'Cold as balls',
-        subTitle:'Do you want to build a snowman? Fuck no.',
+        title:'눈',
+        subTitle:'Do you want to build a snowman?',
         icon:'weather-snowy',
     },
     Drizzle: {
         colors:['#89F7FE', '#66A6FF'],
-        title:'Drizzle',
-        subTitle:'Is like rain, but gay',
-        icon:'weather-rainy',
+        title:'이슬비',
+        subTitle:'비는 빈데 미묘하네',
+        icon:'weather-rainy', 
     },
     Haze: {
         colors:['#89F7FE', '#66A6FF'],
-        title:'Haze',
-        subTitle:"Don't know yat that is",
+        title:'안개',
+        subTitle:"안개꼈단다",
         icon:'weather-fog',
     },
    
 }
 const Weather = ({name, temperature}) => {
-    name='Haze'
+    //name='Haze'
 	return <LinearGradient colors={weatherCases[name].colors} style={styles.container} >
             <View style={styles.upper}>
             <MaterialCommunityIcons color="white" size={144} name={weatherCases[name].icon}/>
